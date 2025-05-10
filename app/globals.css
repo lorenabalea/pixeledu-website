@@ -82,3 +82,17 @@
     font-family: var(--font-inter);
   }
 }
+
+@layer utilities {
+  .light-mode-card {
+    @apply dark:bg-black/40 dark:backdrop-blur-sm bg-white/90 backdrop-blur-sm border-primary/5 shadow-sm;
+  }
+
+  .light-mode-gradient {
+    @apply dark:from-primary/20 dark:to-purple-900/20 from-primary/10 to-purple-400/10;
+  }
+
+  .light-mode-glow {
+    @apply dark:shadow-primary/10 shadow-primary/5;
+  }
+}

@@ -9,6 +9,7 @@ import NewsletterSignup from "@/components/newsletter-signup"
 import HeroSection from "@/components/hero-section"
 import BenefitsSection from "@/components/benefits-section"
 import TestimonialsSection from "@/components/testimonials-section"
+import { ThemeSwitcher } from "@/components/theme-switcher"
 
 export default function Home() {
   return (
@@ -70,10 +71,10 @@ export default function Home() {
               ].map((course, index) => (
                 <Card
                   key={index}
-                  className="overflow-hidden border-none bg-black/40 backdrop-blur-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300"
+                  className="overflow-hidden border-none light-mode-card hover:shadow-xl light-mode-glow transition-all duration-300"
                 >
                   <CardContent className="p-0">
-                    <div className="h-48 bg-gradient-to-br from-primary/20 to-purple-900/20 flex items-center justify-center">
+                    <div className="h-48 bg-gradient-to-br light-mode-gradient flex items-center justify-center">
                       <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center">
                         <Gamepad2 className="w-10 h-10 text-primary" />
                       </div>
@@ -282,6 +283,9 @@ export default function Home() {
       </section>
 
       <NewsletterSignup />
+
+      {/* Add the theme switcher */}
+      <ThemeSwitcher />
     </div>
   )
 }

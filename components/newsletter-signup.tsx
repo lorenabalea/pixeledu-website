@@ -22,8 +22,8 @@ export default function NewsletterSignup() {
 
   return (
     <section className="container px-4 md:px-6">
-      <div className="relative overflow-hidden rounded-3xl bg-black/40 backdrop-blur-sm border border-primary/10">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-purple-900/10"></div>
+      <div className="relative overflow-hidden rounded-3xl light-mode-card border border-primary/10">
+        <div className="absolute inset-0 bg-gradient-to-br light-mode-gradient"></div>
         <div className="relative z-10 p-8 md:p-12 lg:p-16">
           <div className="flex flex-col items-center text-center space-y-4 max-w-[800px] mx-auto">
             <Badge className="bg-primary/10 text-primary hover:bg-primary/20 px-4 py-1 rounded-full">

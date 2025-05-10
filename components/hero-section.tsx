@@ -37,7 +37,10 @@ export default function HeroSection() {
           size: Math.random() * 2 + 0.5,
           speedX: (Math.random() - 0.5) * 0.5,
           speedY: (Math.random() - 0.5) * 0.5,
-          color: `rgba(${Math.floor(Math.random() * 100 + 155)}, ${Math.floor(Math.random() * 100)}, ${Math.floor(Math.random() * 255)}, ${Math.random() * 0.5 + 0.1})`,
+          // Adjust particle colors for light/dark mode
+          color: `rgba(${Math.floor(Math.random() * 100 + 155)}, ${Math.floor(Math.random() * 100)}, ${Math.floor(
+            Math.random() * 255,
+          )}, ${Math.random() * 0.3 + 0.1})`,
         })
       }
     }
@@ -71,7 +74,8 @@ export default function HeroSection() {
 
             if (distance < 150) {
               ctx.beginPath()
-              ctx.strokeStyle = `rgba(130, 0, 255, ${0.1 - distance / 1500})`
+              // Adjust line color for light/dark mode
+              ctx.strokeStyle = `rgba(130, 0, 255, ${0.05 - distance / 3000})`
               ctx.lineWidth = 0.5
               ctx.moveTo(particle.x, particle.y)
               ctx.lineTo(otherParticle.x, otherParticle.y)
@@ -104,6 +108,7 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center">
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+      {/* Update gradient for light mode compatibility */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background"></div>
 
       <div className="container relative z-10 px-4 md:px-6 py-12 md:py-24 lg:py-32">
@@ -132,15 +137,16 @@ export default function HeroSection() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 w-full max-w-4xl">
-            <div className="bg-black/40 backdrop-blur-sm p-6 rounded-xl border border-primary/10 hover:border-primary/30 transition-colors">
+            {/* Update card styling for light mode */}
+            <div className="light-mode-card p-6 rounded-xl border hover:border-primary/30 transition-colors">
               <h3 className="font-heading font-bold text-xl mb-2">Fast Learning</h3>
               <p className="text-muted-foreground">Practical, concise courses designed for quick skill acquisition</p>
             </div>
-            <div className="bg-black/40 backdrop-blur-sm p-6 rounded-xl border border-primary/10 hover:border-primary/30 transition-colors">
+            <div className="light-mode-card p-6 rounded-xl border hover:border-primary/30 transition-colors">
               <h3 className="font-heading font-bold text-xl mb-2">Gamified System</h3>
               <p className="text-muted-foreground">Earn XP, unlock achievements, and compete on leaderboards</p>
             </div>
-            <div className="bg-black/40 backdrop-blur-sm p-6 rounded-xl border border-primary/10 hover:border-primary/30 transition-colors">
+            <div className="light-mode-card p-6 rounded-xl border hover:border-primary/30 transition-colors">
               <h3 className="font-heading font-bold text-xl mb-2">Token Rewards</h3>
               <p className="text-muted-foreground">Earn $PUR tokens for completing courses and challenges</p>
             </div>

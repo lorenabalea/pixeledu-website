@@ -42,7 +42,7 @@ export default function BenefitsSection() {
         ].map((benefit, index) => (
           <div
             key={index}
-            className="bg-black/40 backdrop-blur-sm p-8 rounded-xl border border-primary/10 hover:border-primary/30 transition-all hover:shadow-xl hover:shadow-primary/5 group"
+            className="light-mode-card p-8 rounded-xl border border-primary/10 hover:border-primary/30 transition-all hover:shadow-xl light-mode-glow group"
           >
             <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
               <benefit.icon className="w-6 h-6 text-primary" />

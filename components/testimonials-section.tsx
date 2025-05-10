@@ -69,7 +69,7 @@ export default function TestimonialsSection() {
         ].map((testimonial, index) => (
           <Card
             key={index}
-            className="border-none bg-black/40 backdrop-blur-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300"
+            className="border-none light-mode-card hover:shadow-xl light-mode-glow transition-all duration-300"
           >
             <CardContent className="p-6">
               <div className="flex items-center gap-4 mb-4">
