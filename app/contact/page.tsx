@@ -118,12 +118,12 @@ export default function ContactPage() {
                     <h3 className="font-heading font-bold mb-1">Instagram</h3>
                     <p className="text-muted-foreground mb-2">Follow us for updates and behind-the-scenes</p>
                     <a
-                      href="https://instagram.com/pixeledu"
+                      href="https://www.instagram.com/pixeledu.web3/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:underline font-medium"
                     >
-                      @pixeledu
+                      @pixeledu.web3
                     </a>
                   </div>
                 </CardContent>
@@ -167,38 +167,12 @@ export default function ContactPage() {
 
           <div>
             <h2 className="text-2xl font-bold font-heading mb-6">Connect With Us</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              <Button variant="outline" className="light-mode-card border-primary/10" asChild>
-                <Link href="https://twitter.com/pixeledu" target="_blank" rel="noopener noreferrer">
-                  <svg className="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M22 5.8a8.49 8.49 0 0 1-2.36.64 4.13 4.13 0 0 0 1.81-2.27 8.21 8.21 0 0 1-2.61 1 4.1 4.1 0 0 0-7 3.74 11.64 11.64 0 0 1-8.45-4.29 4.16 4.16 0 0 0-.55 2.07 4.09 4.09 0 0 0 1.82 3.41 4.05 4.05 0 0 1-1.86-.51v.05a4.1 4.1 0 0 0 3.3 4 3.93 3.93 0 0 1-1.1.17 4.9 4.9 0 0 1-.77-.07 4.11 4.11 0 0 0 3.83 2.84A8.22 8.22 0 0 1 3 18.34a7.93 7.93 0 0 1-1-.06 11.57 11.57 0 0 0 6.29 1.85A11.59 11.59 0 0 0 20 8.45v-.53a8.43 8.43 0 0 0 2-2.12Z" />
-                  </svg>
-                  Twitter
-                </Link>
-              </Button>
-              <Button variant="outline" className="light-mode-card border-primary/10" asChild>
-                <Link href="https://discord.gg/pixeledu" target="_blank" rel="noopener noreferrer">
-                  <svg className="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.39-.444.885-.608 1.28a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.28.077.077 0 0 0-.079-.036c-1.714.29-3.354.8-4.885 1.49a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055 20.03 20.03 0 0 0 5.993 2.98.078.078 0 0 0 .084-.026 13.83 13.83 0 0 0 1.226-1.963.074.074 0 0 0-.041-.104 13.201 13.201 0 0 1-1.872-.878.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028 19.963 19.963 0 0 0 6.002-2.981.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028zM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38 0-1.312.956-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.956 2.38-2.157 2.38zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38 0-1.312.955-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.946 2.38-2.157 2.38z" />
-                  </svg>
-                  Discord
-                </Link>
-              </Button>
-              <Button variant="outline" className="light-mode-card border-primary/10" asChild>
-                <Link href="https://instagram.com/pixeledu" target="_blank" rel="noopener noreferrer">
-                  <Instagram className="mr-2 h-4 w-4" />
-                  Instagram
-                </Link>
-              </Button>
-              <Button variant="outline" className="light-mode-card border-primary/10" asChild>
-                <Link href="https://t.me/pixeledu" target="_blank" rel="noopener noreferrer">
-                  <svg className="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.93 1.25-5.44 3.68-.51.35-.98.53-1.4.52-.46-.01-1.35-.26-2.01-.48-.81-.27-1.46-.42-1.4-.88.03-.24.29-.48.79-.74 3.07-1.34 5.12-2.22 6.15-2.66 2.93-1.24 3.54-1.46 3.94-1.46.1 0 .32.02.46.19.12.14.15.34.17.47-.01.09.01.19.01.27z" />
-                  </svg>
-                  Telegram
-                </Link>
-              </Button>
-            </div>
+            <Button variant="outline" className="light-mode-card border-primary/10" asChild>
+              <Link href="https://www.instagram.com/pixeledu.web3/" target="_blank" rel="noopener noreferrer">
+                <Instagram className="mr-2 h-4 w-4" />
+                Instagram
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

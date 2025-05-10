@@ -19,7 +19,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2">
               <Button variant="ghost" size="icon" asChild>
-                <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://www.instagram.com/pixeledu.web3/" target="_blank" rel="noopener noreferrer">
                   <Instagram className="h-5 w-5" />
                   <span className="sr-only">Instagram</span>
                 </Link>
