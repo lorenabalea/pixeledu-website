@@ -10,74 +10,7 @@ import HeroSection from "@/components/hero-section"
 import BenefitsSection from "@/components/benefits-section"
 import TestimonialsSection from "@/components/testimonials-section"
 import { ThemeSwitcher } from "@/components/theme-switcher"
-
-// Course data - matching with courses page
-const courses = {
-  tech: [
-    {
-      id: "full-stack-web3",
-      title: "Full-Stack Web3 Development",
-      description: "Learn to build decentralized applications from scratch",
-      image: "/images/courses/full-stack-web3.png",
-      xp: 5000,
-      duration: "8 weeks",
-      tokens: 500,
-      level: "Intermediate",
-    },
-    {
-      id: "smart-contract-security",
-      title: "Smart Contract Security",
-      description: "Master the art of writing secure smart contracts",
-      image: "/images/courses/smart-contract-security.png",
-      xp: 5500,
-      duration: "5 weeks",
-      tokens: 550,
-      level: "Advanced",
-    },
-    {
-      id: "react-for-web3",
-      title: "React for Web3",
-      description: "Build modern UIs for blockchain applications",
-      image: "/images/courses/react-for-web3.png",
-      xp: 3000,
-      duration: "4 weeks",
-      tokens: 300,
-      level: "Beginner",
-    },
-  ],
-  blockchain: [
-    {
-      id: "blockchain-basics",
-      title: "Blockchain Fundamentals",
-      description: "Understand the core concepts of blockchain technology",
-      image: "/images/courses/blockchain-basics.png",
-      xp: 3000,
-      duration: "4 weeks",
-      tokens: 300,
-      level: "Beginner",
-    },
-    {
-      id: "defi-masterclass",
-      title: "DeFi Masterclass",
-      description: "Explore decentralized finance protocols and applications",
-      image: "/images/courses/defi-masterclass.png",
-      xp: 4000,
-      duration: "5 weeks",
-      tokens: 400,
-      level: "Intermediate",
-    },
-    {
-      id: "create-memecoin",
-      title: "NFT Creation & Trading",
-      description: "Learn to create, mint and trade NFTs on various marketplaces",
-      image: "/images/courses/create-memecoin.png",
-      xp: 3500,
-      duration: "3 weeks",
-      tokens: 350,
-      level: "Beginner",
-    },
-  ],
-}
+import { featuredCourses } from "@/components/course-data"
 
 export default function Home() {
   return (
@@ -111,7 +44,7 @@ export default function Home() {
 
           <TabsContent value="tech" className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {courses.tech.map((course, index) => (
+              {featuredCourses.tech.map((course, index) => (
                 <Card
                   key={index}
                   className="overflow-hidden border-none light-mode-card hover:shadow-xl light-mode-glow transition-all duration-300"
@@ -166,7 +99,7 @@ export default function Home() {
 
           <TabsContent value="blockchain" className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {courses.blockchain.map((course, index) => (
+              {featuredCourses.blockchain.map((course, index) => (
                 <Card
                   key={index}
                   className="overflow-hidden border-none light-mode-card hover:shadow-xl light-mode-glow transition-all duration-300"
