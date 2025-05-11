@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Instagram, Mail, MapPin, MessageSquare, Phone, Send } from "lucide-react"
+import { Instagram, Mail, MessageSquare, Send } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -109,56 +109,29 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              <Card className="light-mode-card border-primary/10">
-                <CardContent className="p-6 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Instagram className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-bold mb-1">Instagram</h3>
-                    <p className="text-muted-foreground mb-2">Follow us for updates and behind-the-scenes</p>
-                    <a
-                      href="https://www.instagram.com/pixeledu.web3/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline font-medium"
-                    >
-                      @pixeledu.web3
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="light-mode-card border-primary/10">
-                <CardContent className="p-6 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Phone className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-bold mb-1">Phone</h3>
-                    <p className="text-muted-foreground mb-2">Available Monday-Friday, 9am-5pm EST</p>
-                    <a href="tel:+18005551234" className="text-primary hover:underline font-medium">
-                      +1 (800) 555-1234
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="light-mode-card border-primary/10">
-                <CardContent className="p-6 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <MapPin className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-bold mb-1">Location</h3>
-                    <p className="text-muted-foreground mb-2">Our headquarters</p>
-                    <address className="not-italic text-primary">
-                      123 Web3 Avenue
-                      <br />
-                      San Francisco, CA 94103
-                      <br />
-                      United States
-                    </address>
+              {/* Instagram CTA Card */}
+              <Card className="light-mode-card border-primary/10 overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="bg-gradient-to-r from-purple-600 to-pink-500 p-6">
+                    <div className="flex flex-col items-center text-center space-y-4">
+                      <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                        <Instagram className="h-8 w-8 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold text-white">Follow Us on Instagram</h3>
+                      <p className="text-white/80">
+                        Stay updated with our latest courses, events, and Web3 insights by following us on Instagram.
+                      </p>
+                      <Button
+                        className="bg-white text-purple-600 hover:bg-white/90 hover:text-purple-700 mt-2"
+                        size="lg"
+                        asChild
+                      >
+                        <Link href="https://www.instagram.com/pixeledu.web3/" target="_blank" rel="noopener noreferrer">
+                          <Instagram className="mr-2 h-5 w-5" />
+                          @pixeledu.web3
+                        </Link>
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -166,13 +139,27 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold font-heading mb-6">Connect With Us</h2>
-            <Button variant="outline" className="light-mode-card border-primary/10" asChild>
-              <Link href="https://www.instagram.com/pixeledu.web3/" target="_blank" rel="noopener noreferrer">
-                <Instagram className="mr-2 h-4 w-4" />
-                Instagram
-              </Link>
-            </Button>
+            <h2 className="text-2xl font-bold font-heading mb-6">Why Connect With Us?</h2>
+            <div className="space-y-4">
+              <div className="p-4 border border-primary/10 rounded-lg light-mode-card">
+                <h3 className="font-heading font-bold mb-2">Exclusive Content</h3>
+                <p className="text-muted-foreground text-sm">
+                  Get early access to new courses, tutorials, and educational resources.
+                </p>
+              </div>
+              <div className="p-4 border border-primary/10 rounded-lg light-mode-card">
+                <h3 className="font-heading font-bold mb-2">Community Events</h3>
+                <p className="text-muted-foreground text-sm">
+                  Stay informed about upcoming webinars, AMAs, and virtual meetups.
+                </p>
+              </div>
+              <div className="p-4 border border-primary/10 rounded-lg light-mode-card">
+                <h3 className="font-heading font-bold mb-2">Learning Tips</h3>
+                <p className="text-muted-foreground text-sm">
+                  Discover practical tips and insights to accelerate your Web3 learning journey.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -227,28 +214,6 @@ export default function ContactPage() {
               </p>
             </CardContent>
           </Card>
-        </div>
-      </div>
-
-      {/* Map Section */}
-      <div className="mb-20">
-        <div className="flex flex-col items-center text-center space-y-4 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-heading tracking-tighter">Find Us</h2>
-        </div>
-
-        <div className="relative aspect-[21/9] w-full rounded-xl overflow-hidden light-mode-card border border-primary/10">
-          <div className="absolute inset-0 bg-gradient-to-br light-mode-gradient opacity-10"></div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.95397618613!2d-122.43913217412364!3d37.77710275675243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1683900604563!5m2!1sen!2sus"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Pixel Edu Location"
-            className="relative z-10"
-          ></iframe>
         </div>
       </div>
 
