@@ -4,7 +4,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Award, Clock, Coins, Gamepad2, Zap } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 import NewsletterSignup from "@/components/newsletter-signup"
 import HeroSection from "@/components/hero-section"
 import BenefitsSection from "@/components/benefits-section"
@@ -250,37 +249,6 @@ export default function Home() {
       </section>
 
       <TestimonialsSection />
-
-      {/* Dashboard Preview */}
-      <section className="container px-4 md:px-6">
-        <div className="flex flex-col items-center text-center space-y-4 mb-12">
-          <Badge className="bg-primary/10 text-primary hover:bg-primary/20 px-4 py-1 rounded-full">
-            Dashboard Preview
-          </Badge>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading tracking-tighter">
-            Track Your Progress
-          </h2>
-          <p className="text-muted-foreground max-w-[700px]">
-            Monitor your learning journey, track XP, earn badges, and compete on leaderboards.
-          </p>
-        </div>
-
-        <div className="relative mt-10 rounded-xl overflow-hidden border border-primary/10 shadow-2xl shadow-primary/5">
-          <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-purple-900/5 to-transparent"></div>
-          <Image
-            src="/placeholder.svg?height=800&width=1600"
-            alt="Dashboard Preview"
-            width={1600}
-            height={800}
-            className="w-full h-auto"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent flex items-end justify-center pb-8">
-            <Button size="lg" className="font-heading">
-              Coming Soon
-            </Button>
-          </div>
-        </div>
-      </section>
 
       <NewsletterSignup />
 

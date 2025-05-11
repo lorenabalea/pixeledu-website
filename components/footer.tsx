@@ -9,8 +9,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1 space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <div className="relative w-8 h-8 bg-gradient-to-tr from-primary to-purple-600 rounded-md flex items-center justify-center">
-                <span className="font-heading font-bold text-white">P</span>
+              <div className="relative w-8 h-8 flex items-center justify-center">
+                <img src="/images/my-logo.png" alt="Pixel Edu Logo" className="w-full h-full object-contain" />
               </div>
               <span className="font-heading font-bold text-xl">Pixel Edu</span>
             </Link>
@@ -60,22 +60,6 @@ export default function Footer() {
                 <li>
                   <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about#team"
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    Team
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about#partnerships"
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    Partnerships
                   </Link>
                 </li>
                 <li>

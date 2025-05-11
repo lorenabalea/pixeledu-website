@@ -16,6 +16,7 @@ const routes = [
   { name: "About", path: "/about" },
   { name: "Blog", path: "/blog" },
   { name: "FAQ", path: "/faq" },
+  { name: "Contact", path: "/contact" },
 ]
 
 export default function Navbar() {
@@ -44,8 +45,8 @@ export default function Navbar() {
     >
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <div className="relative w-8 h-8 bg-gradient-to-tr from-primary to-purple-600 rounded-md flex items-center justify-center">
-            <span className="font-heading font-bold text-white">P</span>
+          <div className="relative w-10 h-10 flex items-center justify-center">
+            <img src="/images/my-logo.png" alt="Pixel Edu Logo" className="w-full h-full object-contain" />
           </div>
           <span className="font-heading font-bold text-xl">Pixel Edu</span>
         </Link>
